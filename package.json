@@ -1,0 +1,19 @@
+{
+  "name": "img2dom",
+  "version": "1.0.0",
+  "description": "实验性项目 将图片对象转化为dom对象",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastrodia/img2dom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gastrodia/img2dom/issues"
+  },
+  "homepage": "https://github.com/gastrodia/img2dom#readme"
+}
