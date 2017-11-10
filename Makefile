@@ -4,7 +4,7 @@ vpath %.c ${SOURCE_DIR}
 source = $(notdir $(wildcard ${SOURCE_DIR}/*.c))
 objs = $(source:%.c=$(BUILD_DIR)/%.o)
 
-CC = gcc
+CC = g++
 
 build/out: $(objs)
 	@echo ${CC}
@@ -16,7 +16,7 @@ debug: build/out
 
 $(objs): $(BUILD_DIR)/%.o : %.c
 	@mkdir -p $(BUILD_DIR)
-	${CC} -c $< -o $@
+	${CC} -c $< -o $@ -lm 
 
 clean:
 	rm -rf ${BUILD_DIR}
