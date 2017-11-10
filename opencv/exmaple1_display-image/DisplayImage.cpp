@@ -12,9 +12,8 @@ int main(int argc, char* argv[]) {
   }
 
   // 讀取影像檔案
-  Mat image;
-  image = imread( argv[1], 1 );
-
+  Mat image = imread( argv[1], 1 );
+  
   // 檢查影像是否正確讀入
   if ( !image.data ) {
     printf("No image data \n");
@@ -23,12 +22,9 @@ int main(int argc, char* argv[]) {
 
   // 建立視窗
   namedWindow("Display Image", WINDOW_AUTOSIZE);
-
   // 用視窗顯示影像
   imshow("Display Image", image);
-
   // 顯示視窗，直到任何鍵盤輸入後才離開
   waitKey(0);
-
   return 0;
 }
