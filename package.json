@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gastrodia/img2dom/issues"
   },
-  "homepage": "https://github.com/gastrodia/img2dom#readme"
+  "homepage": "https://github.com/gastrodia/img2dom#readme",
+  "directories": {
+    "doc": "docs"
+  }
 }

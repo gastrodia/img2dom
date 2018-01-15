@@ -1,0 +1,15 @@
+version: '2.0'
+
+services:
+  img2dom:
+    image: img2dom
+    build: .
+    environment:
+      NODE_ENV: development
+    # ports:
+    #   - 3001:3000
+    #   - 9229:9229
+    volumes:
+      - .:/container/app
+    command:  nodemon --inspect=0.0.0.0:9229 index.js
+ 
